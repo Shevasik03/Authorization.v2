@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-style: normal;
+    height: 100vh;
+    background-image: url(./img/background__sign-in.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 1s ease-in-out;
+}
+
+.wrapper {
+    width: 1310px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* header style start */
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 34px;
+    margin-bottom: 49px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 105px;
+
+    left: 72px;
+    top: 37px;
+}
+
+.header__logo img {
+    width: 46px;
+}
+
+.header__logo h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.header__button button{
+    font-weight: 900;
+    font-size: 12.8px;
+    line-height: 23px;
+    text-align: center;
+    cursor: pointer;
+
+    width: 136px;
+    height: 48px;
+
+    border: 1.5px solid #212121;
+    background-color: transparent;
+}
+
+/* header style end */ 
+
+/* main style start */
+
+/* Authorization style start */
+
+.Authorization {
+    position: relative;
+    margin:0 auto 120px;
+    width: 572px;
+    height: 588px;
+    
+}
+
+
+.sign-up {
+    position: absolute;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.sign-in {
+    position: absolute;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* form style start */
+
+.form__wrapper {
+    margin: 32px 94px 40px;
+}
+
+.box {
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 82px 40px -14px rgba(100, 100, 100, 0.0784314);
+    width: 565px;
+    height: 588px;
+}
+
+.form__input {
+    margin-bottom: 18px;
+}
+
+.form__input input:focus {
+    outline: none;
+}
+
+.form__Subtitle {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.form__Subtitle h1 {
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 38px;
+    color: #212121;
+}
+
+.form__Subtitle p {
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 19px;
+    color: #757575;
+}
+
+
+.form__title {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+}
+
+.form__title label {
+    font-weight: 500;
+    font-size: 10.29px;
+    line-height: 18px;
+    color: #616161;
+}
+
+.form__title input {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #616161;
+    border: none;
+}
+
+
+.form__border {
+    border: 1px solid #E0E0E0;
+}
+
+.form__checkbox {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.form__checkbox input {
+    margin-right: 5px;
+}
+
+.form__checkbox input[type='checkbox'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.form__checkbox input[type="checkbox"]:checked{
+    background-image: url(/img/svg/done.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form__checkbox a {
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 23px;
+    color: #616161;
+}
+
+.form__submit input{
+    width: 380px;
+    height: 64px;
+
+    content: "CREATE AN ACCOUNT";
+    color: #fff;
+    background-color: #000000;
+
+    border: none;
+}
+
+/* form style end */
+
+/* social style start */
+
+.social p {
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 23px;
+    text-align: center;
+
+    margin-bottom: 16px;
+}
+
+.container__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 170px;
+    margin: 0 auto;
+}
+
+.box__social {
+    width: 40px;
+    height: 40px;
+    background: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box__social a {
+    z-index: 2;
+}
+
+.box__social img {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+/* social style end */
+
+/* Authorization style end */
+
+/* main style end */
+
+/* footer style start */
+
+.footer {
+    position: relative;
+}
+
+.footer p {
+    font-weight: 300;
+    font-size: 10.29px;
+    line-height: 15px;
+    text-align: center;
+    color: #616161;
+}
+
+/* footer style end */
+
+/* JS класи */
+
+.transition__form-left {
+    
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+
+}
+
+.transition__form-right {
+    
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.displayNone {
+    display: none;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
