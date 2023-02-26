@@ -191,7 +191,7 @@ body {
 }
 
 .form__checkbox input[type="checkbox"]:checked{
-    background-image: url(/img/svg/done.svg);
+    background-image: url(./img/svg/done.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
